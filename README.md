@@ -2,6 +2,8 @@
 
 ## Purpose
 
+- Test various developer and operations GO features
+
 ## Commands
 
 - Build & run binary

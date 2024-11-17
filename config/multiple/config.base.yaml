@@ -1,0 +1,6 @@
+profile: base
+cli-installed:
+  aws: true
+  kubectl: true
+  helm: true
+  terraform: true
