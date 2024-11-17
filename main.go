@@ -4,6 +4,7 @@ import (
 	"embed"
 	"fmt"
 	"log/slog"
+	"runtime"
 
 	"github.com/J011195/tech-bench/util"
 )
@@ -21,6 +22,7 @@ func main() {
 }
 
 func RunTechBench() {
+	PrintBuildCompilerVersion()
 	PrintSingleEmbeddedFile()
 	PrintMultipleEmbeddedFile()
 }
@@ -41,4 +43,8 @@ func PrintMultipleEmbeddedFile() {
 	for _, file := range configs {
 		fmt.Println(file.Name())
 	}
+}
+
+func PrintBuildCompilerVersion() {
+	slog.Info(commandName, util.GetFuncName(), fmt.Sprintf("Compiled with GO version: %s", runtime.Version()))
 }
