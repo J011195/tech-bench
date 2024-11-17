@@ -23,5 +23,8 @@ env GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-s -w" -o ./bin .
 - Install binary
 
 ```bash
+# Latest
 go install -ldflags="-s -w" -v github.com/J011195/tech-bench@latest
+# Specific version
+go install -ldflags="-s -w" -v github.com/J011195/tech-bench@v1.0.0
 ```
