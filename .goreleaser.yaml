@@ -1,0 +1,15 @@
+project_name: tech-bench
+builds:
+  - id: tech-bench
+    binary: tech-bench
+    main: .
+    dir: ./cli
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
