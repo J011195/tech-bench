@@ -1,4 +1,4 @@
-project_name: tech-bench
+project_name: tech-bench-cli
 builds:
   - dir: ./tech-bench-cli
     goos:
