@@ -1,6 +1,8 @@
 project_name: tech-bench-cli
 builds:
   - dir: ./tech-bench-cli
+    id: "tech-bench-cli"
+    binary: tech-bench-cli
     goos:
       - linux
       - windows
