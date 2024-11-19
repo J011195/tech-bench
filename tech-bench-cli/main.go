@@ -6,7 +6,7 @@ import (
 	"log/slog"
 	"runtime"
 
-	"github.com/J011195/tech-bench/util"
+	"github.com/J011195/tech-bench-cli/util"
 )
 
 //go:embed config/single/*.yaml
